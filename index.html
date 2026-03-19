@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,40 +7,26 @@
 
 <title>Khulafa Islamic Junior School | Ndejje Lubugumu</title>
 
-<meta name="description" content="Khulafa Islamic Junior School provides strong academics, Islamic values and modern learning in Ndejje Lubugumu along Entebbe Road. Admissions open for Senior 1 to Senior 6.">
-
-<meta name="keywords" content="Khulafa Islamic School, Islamic school Uganda, school in Ndejje, Muslim school Entebbe Road, secondary school Uganda">
+<meta name="description" content="Khulafa Islamic Junior School offers strong academics, Islamic values, and modern learning. Admissions open S1–S6.">
 
 <link rel="icon" href="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
 
 <style>
 
-/* GLOBAL */
-
+/* COLORS */
 :root{
 --green:#0b5d3b;
 --dark:#063d27;
 --light:#f4f7f6;
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
-scroll-behavior:smooth;
-}
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+body{scroll-behavior:smooth;}
 
-body{
-color:#333;
-background:white;
-}
-
-/* NAVBAR */
-
+/* NAV */
 header{
 position:fixed;
-top:0;
 width:100%;
 background:white;
 border-bottom:3px solid var(--green);
@@ -49,37 +34,30 @@ z-index:1000;
 }
 
 .nav{
-max-width:1200px;
-margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:14px 20px;
+padding:15px 20px;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
-font-weight:700;
+font-weight:bold;
 color:var(--green);
 }
-
-.logo img{
-width:45px;
-}
-
-/* MENU */
+.logo img{width:45px;}
 
 .menu{
 display:flex;
-gap:25px;
+gap:20px;
 }
 
 .menu a{
 text-decoration:none;
-font-weight:600;
 color:var(--green);
+font-weight:600;
 }
 
 .toggle{
@@ -89,9 +67,7 @@ cursor:pointer;
 }
 
 /* MOBILE */
-
 @media(max-width:768px){
-
 .menu{
 position:absolute;
 top:70px;
@@ -101,57 +77,50 @@ flex-direction:column;
 width:220px;
 max-height:0;
 overflow:hidden;
-transition:0.3s;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
 }
-
-.menu a{
-padding:14px;
-border-bottom:1px solid #eee;
-}
-
-.menu.show{
-max-height:500px;
-}
-
-.toggle{
-display:block;
-}
-
+.menu.show{max-height:500px;}
+.menu a{padding:14px;border-bottom:1px solid #eee;}
+.toggle{display:block;}
 }
 
 /* HERO */
-
 .hero{
-height:95vh;
+height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 color:white;
 
 background:
-linear-gradient(rgba(11,93,59,.75),rgba(11,93,59,.75)),
+linear-gradient(rgba(11,93,59,.7),rgba(11,93,59,.7)),
 url("https://i.ibb.co/bj3XBGkf/unnamed-1.webp");
 
 background-size:cover;
-background-position:center;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-animation:fadeUp 1s ease;
+.hero h1{font-size:42px;}
+.hero span{border-right:2px solid white;padding-right:5px;}
+
+.btn{
+background:white;
+color:var(--green);
+padding:12px 25px;
+border-radius:6px;
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
+transition:.3s;
 }
 
-.hero p{
-font-size:20px;
+.btn:hover{
+box-shadow:0 0 15px white;
 }
 
-/* SECTIONS */
-
+/* SECTION */
 section{
-padding:90px 20px;
+padding:100px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -163,25 +132,25 @@ margin-bottom:40px;
 }
 
 /* GRID */
-
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:25px;
 }
 
-/* CARDS */
-
+/* CARD */
 .card{
+opacity:0;
+transform:translateY(40px);
+transition:.6s;
 background:white;
 border-radius:10px;
-overflow:hidden;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-transition:.3s;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.card:hover{
-transform:translateY(-6px);
+.card.show{
+opacity:1;
+transform:translateY(0);
 }
 
 .card img{
@@ -195,38 +164,20 @@ padding:12px;
 color:var(--green);
 }
 
-/* ABOUT */
-
-.about p{
-max-width:700px;
-margin:auto;
-text-align:center;
-line-height:1.6;
-color:#555;
+.card p{
+padding:0 12px 12px;
 }
 
 /* WHY */
-
 .why{
 background:var(--green);
 color:white;
 }
 
-.why h2{
-color:white;
-}
+.why h2{color:white;}
+.why .card{background:#0f6d46;color:white;}
 
-.why .card{
-background:#0f6d46;
-color:white;
-}
-
-/* ADMISSION */
-
-.admission{
-background:var(--light);
-}
-
+/* FORM */
 .form{
 max-width:600px;
 margin:auto;
@@ -234,42 +185,39 @@ display:grid;
 gap:15px;
 }
 
-.form input,
-.form select,
-.form textarea{
+.form input,.form select{
 padding:12px;
-border-radius:8px;
+border-radius:6px;
 border:1px solid #ccc;
 }
 
 .form button{
 background:var(--green);
 color:white;
-border:none;
 padding:14px;
-border-radius:8px;
+border:none;
+border-radius:6px;
 cursor:pointer;
-font-weight:600;
+transition:.3s;
 }
 
-/* CONTACT */
-
-.contact{
-text-align:center;
+.form button:hover{
+box-shadow:0 0 15px var(--green);
 }
 
+/* SOCIAL */
 .social img{
-width:36px;
+width:35px;
 margin:10px;
 transition:.3s;
 }
 
 .social img:hover{
 transform:scale(1.2);
+box-shadow:0 0 10px var(--green);
 }
 
 /* WHATSAPP */
-
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -281,33 +229,15 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-box-shadow:0 10px 20px rgba(0,0,0,.25);
 }
 
-.whatsapp img{
-width:36px;
-}
-
-/* FOOTER */
+.whatsapp img{width:35px;}
 
 footer{
 background:var(--dark);
 color:white;
 text-align:center;
-padding:25px;
-}
-
-/* ANIMATION */
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+padding:20px;
 }
 
 </style>
@@ -317,151 +247,102 @@ transform:translateY(0);
 <body>
 
 <header>
-
 <div class="nav">
 
 <div class="logo">
 <img src="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
-Khulafa Islamic Junior School
+Khulafa School
 </div>
 
 <div class="toggle" onclick="toggleMenu()">☰</div>
 
-<nav class="menu" id="menu">
-
+<div class="menu" id="menu">
 <a href="#home">Home</a>
-<a href="#about">About</a>
 <a href="#campus">Campus</a>
 <a href="#academics">Academics</a>
 <a href="#why">Why Us</a>
 <a href="#admission">Admission</a>
 <a href="#contact">Contact</a>
-
-</nav>
-
 </div>
 
+</div>
 </header>
 
 <!-- HERO -->
-
 <section class="hero" id="home">
-
 <div>
 <h1>Khulafa Islamic Junior School</h1>
-<p>Strong Academics • Islamic Values • Modern Learning</p>
+<p><span id="typing"></span></p>
+<a href="#admission" class="btn">Apply Now</a>
 </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about" class="about">
-
-<h2>About Our School</h2>
-
-<p>
-Khulafa Islamic Junior School provides quality education while nurturing strong Islamic values. 
-Our mission is to raise disciplined students who excel academically and grow into responsible future leaders.
-</p>
-
 </section>
 
 <!-- CAMPUS -->
-
 <section id="campus">
-
 <h2>Campus Life</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://i.ibb.co/MyFKpXRx/images-32.jpg">
-<h3>Student Activities</h3>
+<img loading="lazy" src="https://i.ibb.co/JjYBj53V/unnamed.webp">
+<h3>Science Laboratory</h3>
+<p>Modern practical learning environment.</p>
 </div>
 
 <div class="card">
-<img src="https://i.ibb.co/hJR2pmWL/images-33.jpg">
-<h3>School Community</h3>
+<img loading="lazy" src="https://i.ibb.co/hJR2pmWL/images-33.jpg">
+<h3>Sports & Clubs</h3>
+<p>Building teamwork and leadership skills.</p>
 </div>
 
 <div class="card">
-<img src="https://i.ibb.co/JjYBj53V/unnamed.webp">
-<h3>Safe Environment</h3>
+<img loading="lazy" src="https://i.ibb.co/MyFKpXRx/images-32.jpg">
+<h3>Graduation Ceremony</h3>
+<p>Celebrating student success and milestones.</p>
 </div>
 
 </div>
-
 </section>
 
 <!-- ACADEMICS -->
-
 <section id="academics">
-
-<h2>Our Subjects</h2>
+<h2>Academics</h2>
 
 <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb">
-<h3>Mathematics</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-<h3>English</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d">
-<h3>Science</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-<h3>ICT</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d">
-<h3>Islamic Studies</h3>
-</div>
+<div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb"><h3>Mathematics</h3></div>
+<div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"><h3>English</h3></div>
+<div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d"><h3>Science</h3></div>
+<div class="card"><img loading="lazy" src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d"><h3>Islamic Studies</h3></div>
 
 </div>
-
 </section>
 
 <!-- WHY -->
-
 <section id="why" class="why">
-
 <h2>Why Parents Choose Us</h2>
 
 <div class="grid">
 
-<div class="card"><h3>Strong Academics</h3></div>
-<div class="card"><h3>Islamic Character</h3></div>
-<div class="card"><h3>Modern Learning</h3></div>
-<div class="card"><h3>Experienced Teachers</h3></div>
+<div class="card"><h3>Strong Academic Results</h3><p>High performance in exams.</p></div>
+<div class="card"><h3>Islamic Discipline</h3><p>Students grow with values.</p></div>
+<div class="card"><h3>Modern Teaching</h3><p>Updated learning methods.</p></div>
+<div class="card"><h3>Safe Environment</h3><p>Secure and supportive school.</p></div>
 
 </div>
-
 </section>
 
 <!-- ADMISSION -->
+<section id="admission">
+<h2>Apply Now</h2>
 
-<section id="admission" class="admission">
+<form class="form" onsubmit="sendWhatsApp(); return false;">
 
-<h2>Apply for Admission</h2>
+<input type="text" id="student" placeholder="Student Name" required>
+<input type="text" id="parent" placeholder="Parent Name" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
 
-<form class="form">
-
-<input type="text" placeholder="Student Name" required>
-<input type="text" placeholder="Parent Name" required>
-<input type="tel" placeholder="Phone Number" required>
-
-<select required>
-<option>Select Class</option>
+<select id="class">
 <option>S1</option>
 <option>S2</option>
 <option>S3</option>
@@ -470,25 +351,19 @@ Our mission is to raise disciplined students who excel academically and grow int
 <option>S6</option>
 </select>
 
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">Submit Application</button>
+<button type="submit">Apply via WhatsApp</button>
 
 </form>
 
 </section>
 
 <!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
 
-<section id="contact" class="contact">
+<p style="text-align:center;">Ndejje Lubugumu, Entebbe Road</p>
 
-<h2>Contact Us</h2>
-
-<p>Ndejje Lubugumu, Entebbe Road</p>
-<p>0702883108</p>
-
-<div class="social">
-
+<div class="social" style="text-align:center;">
 <a href="https://tiktok.com/@khulafaislamic">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
 </a>
@@ -496,15 +371,12 @@ Our mission is to raise disciplined students who excel academically and grow int
 <a href="https://youtube.com/@KhulafaIslamicsecondaryschool">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
 </a>
-
 </div>
 
 </section>
 
 <footer>
-
 © 2026 Khulafa Islamic Junior School
-
 </footer>
 
 <a href="https://wa.me/256702883108" class="whatsapp">
@@ -513,24 +385,54 @@ Our mission is to raise disciplined students who excel academically and grow int
 
 <script>
 
+/* MENU */
 function toggleMenu(){
-
-const menu=document.getElementById("menu")
-
-menu.classList.toggle("show")
-
+document.getElementById("menu").classList.toggle("show");
 }
 
-/* CLOSE MENU WHEN CLICK */
-
+/* CLOSE MENU */
 document.querySelectorAll(".menu a").forEach(link=>{
-link.addEventListener("click",()=>{
-document.getElementById("menu").classList.remove("show")
-})
-})
+link.onclick=()=>document.getElementById("menu").classList.remove("show");
+});
+
+/* TYPING */
+let text="Strong Academics • Islamic Values • Modern Learning";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,40);
+}
+}
+typing();
+
+/* ANIMATION */
+const cards=document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+cards.forEach(card=>{
+let pos=card.getBoundingClientRect().top;
+if(pos<window.innerHeight-100){
+card.classList.add("show");
+}
+});
+});
+
+/* WHATSAPP FORM */
+function sendWhatsApp(){
+let student=document.getElementById("student").value;
+let parent=document.getElementById("parent").value;
+let phone=document.getElementById("phone").value;
+let clas=document.getElementById("class").value;
+
+let msg=`New Admission:%0AStudent:${student}%0AParent:${parent}%0APhone:${phone}%0AClass:${clas}`;
+
+window.open(`https://wa.me/256702883108?text=${msg}`);
+}
 
 </script>
 
 </body>
 </html>
-```
