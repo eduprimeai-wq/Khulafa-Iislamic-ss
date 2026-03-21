@@ -1,66 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- SEO for Google Search -->
-<title>Khulafa Islamic Secondary School | Ndejje Lubugumu, Uganda</title>
-
-<meta name="description" content="Khulafa Islamic Secondary School in Ndejje Lubugumu, Uganda offers top academics, Islamic values, discipline, and modern education for students from S1 to S6.">
-
-<meta name="keywords" content="Khulafa Islamic Secondary School, Ndejje, Uganda, Islamic school, top academics, S1-S6, bilingual education, science, mathematics, English, Islamic studies">
-
-<meta name="robots" content="index, follow">
-
-<!-- Structured Data for Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "School",
-  "name": "Khulafa Islamic Secondary School",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ndejje–Lubugumu, Entebbe Road",
-    "addressLocality": "Ndejje",
-    "addressRegion": "Uganda",
-    "postalCode": "",
-    "addressCountry": "UG"
-  },
-  "telephone": ["+256702883108", "+256702650708"],
-  "email": "khulafaislamic@gmail.com",
-  "url": "https://khisec.com",
-  "sameAs": [
-    "https://www.tiktok.com/@khulafaislamic",
-    "https://www.youtube.com/@KhulafaIslamicsecondaryschool"
-  ]
-}
-</script>
+<head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="dtQY6AgJE1LgM-4_0q1idSmyy5Yu2hRGzPolOxN-N8M" />
-
 <title>Khulafa Islamic Secondary School | Ndejje Lubugumu Uganda</title>
 
-<meta name="description" content="Khulafa Islamic Secondary School in Ndejje Lubugumu Uganda offers strong academics, Islamic values, discipline and modern education.">
+<meta name="description" content="Khulafa Islamic Secondary School offers strong academics, Islamic values and modern education in Uganda. Apply now.">
 
-<link rel="icon" href="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
+<meta name="google-site-verification" content="dtQY6AgJE1LgM-4_0q1idSmyy5Yu2hRGzPolOxN-N8M" />
+
+<!-- ✅ FIXED FAVICON -->
+<link rel="icon" type="image/png" href="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
+<link rel="shortcut icon" href="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
+
+<!-- ✅ GOOGLE LOGO STRUCTURE -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "School",
+ "name": "Khulafa Islamic Secondary School",
+ "url": "https://khisec.com/",
+ "logo": "https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png"
+}
+</script>
 
 <style>
 
 :root{
 --green:#0b5d3b;
 --dark:#063d27;
---light:#f4f7f6;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
-body{scroll-behavior:smooth;background:white;}
+body{scroll-behavior:smooth;}
 
 /* NAV */
 header{
 position:fixed;
 width:100%;
 background:white;
-border-bottom:2px solid var(--green);
+box-shadow:0 2px 10px rgba(0,0,0,.05);
 z-index:1000;
 }
 
@@ -76,7 +57,7 @@ display:flex;
 align-items:center;
 gap:10px;
 color:var(--green);
-font-weight:bold;
+font-weight:700;
 }
 .logo img{width:45px;}
 
@@ -89,20 +70,10 @@ gap:20px;
 text-decoration:none;
 color:var(--green);
 font-weight:600;
-transition:.3s;
 }
 
-.menu a:hover{
-color:#0a8a5c;
-}
+.toggle{display:none;font-size:28px;cursor:pointer;}
 
-.toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
-/* MOBILE */
 @media(max-width:768px){
 .menu{
 position:absolute;
@@ -110,13 +81,13 @@ top:70px;
 right:0;
 background:white;
 flex-direction:column;
-width:220px;
+width:230px;
 max-height:0;
 overflow:hidden;
 transition:.3s;
 }
 .menu.show{max-height:500px;}
-.menu a{padding:14px;border-bottom:1px solid #eee;}
+.menu a{padding:15px;border-bottom:1px solid #eee;}
 .toggle{display:block;}
 }
 
@@ -128,18 +99,15 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-
 background:
 linear-gradient(rgba(11,93,59,.7),rgba(11,93,59,.7)),
 url("https://i.ibb.co/bj3XBGkf/unnamed-1.webp");
-
 background-size:cover;
 }
 
-.hero h1{font-size:42px;}
+.hero h1{font-size:44px;}
 .hero p{margin-top:10px;font-size:18px;}
 
-/* BUTTON */
 .btn{
 background:white;
 color:var(--green);
@@ -148,11 +116,6 @@ border-radius:6px;
 display:inline-block;
 margin-top:20px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-box-shadow:0 0 15px white;
 }
 
 /* SECTION */
@@ -162,7 +125,8 @@ max-width:1100px;
 margin:auto;
 }
 
-h2{text-align:center;color:var(--green);margin-bottom:30px;}
+h2{text-align:center;color:var(--green);}
+.sub{text-align:center;margin:10px 0 30px;color:#555;}
 
 /* GRID */
 .grid{
@@ -174,15 +138,13 @@ gap:20px;
 /* CARD */
 .card{
 background:white;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 overflow:hidden;
-transition:.4s;
+transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
+.card:hover{transform:translateY(-6px);}
 
 .card img{
 width:100%;
@@ -190,8 +152,8 @@ height:180px;
 object-fit:cover;
 }
 
-.card h3{padding:10px;color:var(--green);}
-.card p{padding:0 10px 10px;}
+.card h3{padding:12px;color:var(--green);}
+.card p{padding:0 12px 15px;color:#444;font-size:14px;}
 
 /* WHY */
 .why{
@@ -200,40 +162,62 @@ color:white;
 }
 
 .why h2{color:white;}
-.why .card{background:#0f6d46;color:white;}
+
+.why .card{
+background:#0f6d46;
+text-align:center;
+padding:25px;
+}
+
+.icon{font-size:40px;margin-bottom:10px;}
+
+/* FORM */
+.form{
+max-width:500px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+.form input,.form select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.form button{
+background:var(--green);
+color:white;
+padding:14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.whatsapp-apply{
+display:block;
+text-align:center;
+background:#25D366;
+color:white;
+padding:14px;
+border-radius:6px;
+font-weight:bold;
+text-decoration:none;
+}
 
 /* CONTACT */
 .contact{text-align:center;line-height:1.8;}
 
-/* SOCIAL */
 .social{
-margin-top:20px;
 display:flex;
 justify-content:center;
 gap:20px;
+margin-top:20px;
 }
 
-.social a{
-display:flex;
-width:45px;
-height:45px;
-border-radius:50%;
-align-items:center;
-justify-content:center;
-background:white;
-transition:.3s;
-}
+.social img{width:28px;}
 
-.social a:hover{
-transform:scale(1.1);
-box-shadow:0 0 12px white;
-}
-
-.social img{
-width:22px;
-}
-
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -245,7 +229,6 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-animation:float 2s infinite;
 }
 
 .whatsapp img{width:35px;}
@@ -254,13 +237,7 @@ footer{
 background:var(--dark);
 color:white;
 text-align:center;
-padding:30px 20px;
-}
-
-/* ANIMATION */
-@keyframes float{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-6px);}
+padding:25px;
 }
 
 </style>
@@ -284,6 +261,7 @@ Khulafa Islamic Secondary School
 <a href="#campus">Campus</a>
 <a href="#academics">Academics</a>
 <a href="#why">Why Us</a>
+<a href="#admission">Apply</a>
 <a href="#contact">Contact</a>
 </div>
 
@@ -294,67 +272,70 @@ Khulafa Islamic Secondary School
 <section class="hero" id="home">
 <div>
 <h1>Khulafa Islamic Secondary School</h1>
-<p>Excellence in Academics & Islamic Values</p>
-<a href="#contact" class="btn">Contact Us</a>
+<p>Strong Academics • Islamic Values • Discipline</p>
+<a href="#admission" class="btn">Apply Now</a>
 </div>
 </section>
 
 <!-- CAMPUS -->
 <section id="campus">
 <h2>Campus Life</h2>
+<p class="sub">A balanced environment for academic and personal growth.</p>
 
 <div class="grid">
 
 <div class="card">
 <img src="https://i.ibb.co/JjYBj53V/unnamed.webp">
 <h3>Science Laboratory</h3>
-<p>Hands-on experiments and practical learning.</p>
+<p>Hands-on learning through experiments.</p>
 </div>
 
 <div class="card">
 <img src="https://i.ibb.co/hJR2pmWL/images-33.jpg">
 <h3>Sports & Clubs</h3>
-<p>Developing teamwork and leadership skills.</p>
+<p>Building teamwork and leadership.</p>
 </div>
 
 <div class="card">
 <img src="https://i.ibb.co/MyFKpXRx/images-32.jpg">
-<h3>Graduation Ceremony</h3>
-<p>Celebrating student success and achievements.</p>
+<h3>Graduation</h3>
+<p>Celebrating success and achievements.</p>
 </div>
 
 </div>
-
 </section>
 
 <!-- ACADEMICS -->
 <section id="academics">
-<h2>Academics</h2>
+<h2>Strong Academics</h2>
 
 <div class="grid">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb">
 <h3>Mathematics</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-<h3>English</h3>
+<p>Problem solving and logical thinking.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d">
 <h3>Science</h3>
+<p>Practical Physics, Chemistry and Biology.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+<h3>English</h3>
+<p>Strong communication skills.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
 <h3>Islamic Studies</h3>
+<p>Qur’an and discipline.</p>
 </div>
 
 </div>
-
 </section>
 
 <!-- WHY -->
@@ -363,28 +344,38 @@ Khulafa Islamic Secondary School
 
 <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
-<h3>Strong Academics</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<h3>Islamic Discipline</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
-<h3>Modern Learning</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238">
-<h3>Safe Environment</h3>
-</div>
+<div class="card"><div class="icon">🎓</div><h3>Academic Excellence</h3></div>
+<div class="card"><div class="icon">🕌</div><h3>Islamic Values</h3></div>
+<div class="card"><div class="icon">🧪</div><h3>Modern Learning</h3></div>
+<div class="card"><div class="icon">🛡️</div><h3>Safe Environment</h3></div>
 
 </div>
+</section>
 
+<!-- ADMISSION -->
+<section id="admission">
+<h2>Apply for Admission</h2>
+
+<div class="form">
+
+<input type="text" id="student" placeholder="Student Name">
+<input type="text" id="parent" placeholder="Parent Name">
+<input type="text" id="phone" placeholder="Phone Number">
+
+<select id="class">
+<option>S1</option>
+<option>S2</option>
+<option>S3</option>
+<option>S4</option>
+<option>S5</option>
+<option>S6</option>
+</select>
+
+<button onclick="sendWhatsApp()">Apply via WhatsApp</button>
+
+<a href="#" class="whatsapp-apply" onclick="quickApply()">Quick WhatsApp Apply</a>
+
+</div>
 </section>
 
 <!-- CONTACT -->
@@ -392,12 +383,11 @@ Khulafa Islamic Secondary School
 <h2>Contact Us</h2>
 
 <div class="contact">
-<p><strong>Location:</strong> Ndejje Lubugumu, Entebbe Road</p>
-<p><strong>Phone:</strong> 0702883108 / 0702650708</p>
+<p><strong>Location:</strong> Ndejje Lubugumu</p>
+<p><strong>Phone:</strong> 0702883108</p>
 <p><strong>Email:</strong> khulafaislamic@gmail.com</p>
 </div>
 
-<!-- SOCIAL -->
 <div class="social">
 <a href="https://www.tiktok.com/@khulafaislamic">
 <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
@@ -419,9 +409,30 @@ Khulafa Islamic Secondary School
 </a>
 
 <script>
+
 function toggleMenu(){
 document.getElementById("menu").classList.toggle("show");
 }
+
+document.querySelectorAll(".menu a").forEach(link=>{
+link.onclick=()=>document.getElementById("menu").classList.remove("show");
+});
+
+function sendWhatsApp(){
+let s=document.getElementById("student").value;
+let p=document.getElementById("parent").value;
+let ph=document.getElementById("phone").value;
+let c=document.getElementById("class").value;
+
+let msg=`New Application:%0AStudent:${s}%0AParent:${p}%0APhone:${ph}%0AClass:${c}`;
+window.open(`https://wa.me/256702883108?text=${msg}`);
+}
+
+function quickApply(){
+let msg="Hello, I would like to apply for admission at Khulafa Islamic Secondary School.";
+window.open(`https://wa.me/256702883108?text=${msg}`);
+}
+
 </script>
 
 </body>
