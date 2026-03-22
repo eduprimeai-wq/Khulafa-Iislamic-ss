@@ -9,37 +9,35 @@
 
 <title>Khulafa Islamic Secondary School | Ndejje Lubugumu Uganda</title>
 
-<meta name="description" content="Khulafa Islamic Secondary School is a top Islamic secondary school in Ndejje Lubugumu Uganda offering strong academics, discipline and modern education.">
+<meta name="description" content="Khulafa Islamic Secondary School in Ndejje Lubugumu Uganda offers strong academics, Islamic values, discipline and modern education. Admissions open S1 to S6.">
 
 <link rel="icon" href="https://i.ibb.co/s9wH81j5/Chat-GPT-Image-Feb-20-2026-02-26-20-AM.png">
 
-<!-- 🔥 ADVANCED STRUCTURED DATA -->
+<!-- STRUCTURED DATA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "EducationalOrganization",
+ "@type": "School",
  "name": "Khulafa Islamic Secondary School",
- "alternateName": "Khulafa Secondary School",
  "url": "https://khisec.com/",
  "address": {
    "@type": "PostalAddress",
    "addressLocality": "Ndejje Lubugumu",
    "addressCountry": "Uganda"
- },
- "description": "A leading Islamic secondary school in Uganda offering modern education and strong Islamic values."
+ }
 }
 </script>
 
 <style>
 
+/* COLORS */
 :root{
 --green:#0b5d3b;
 --dark:#063d27;
---light:#f5f7f6;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
-body{background:white;scroll-behavior:smooth;}
+body{scroll-behavior:smooth;}
 
 /* NAV */
 header{
@@ -61,8 +59,8 @@ padding:15px;
 display:flex;
 align-items:center;
 gap:10px;
+font-weight:bold;
 color:var(--green);
-font-weight:700;
 }
 .logo img{width:45px;}
 
@@ -83,6 +81,7 @@ font-size:28px;
 cursor:pointer;
 }
 
+/* MOBILE */
 @media(max-width:768px){
 .menu{
 position:absolute;
@@ -90,7 +89,7 @@ top:70px;
 right:0;
 background:white;
 flex-direction:column;
-width:230px;
+width:220px;
 max-height:0;
 overflow:hidden;
 transition:.3s;
@@ -104,8 +103,8 @@ transition:.3s;
 .hero{
 height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 color:white;
 
@@ -116,9 +115,7 @@ url("https://i.ibb.co/bj3XBGkf/unnamed-1.webp");
 background-size:cover;
 }
 
-.hero h1{
-font-size:42px;
-}
+.hero h1{font-size:42px;}
 
 .hero p{
 margin-top:10px;
@@ -153,21 +150,21 @@ margin-bottom:30px;
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
 /* CARD */
 .card{
 background:white;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,.1);
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 overflow:hidden;
 transition:.4s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-5px);
 }
 
 .card img{
@@ -176,8 +173,8 @@ height:180px;
 object-fit:cover;
 }
 
-.card h3{padding:12px;color:var(--green);}
-.card p{padding:0 12px 12px;}
+.card h3{padding:10px;color:var(--green);}
+.card p{padding:0 10px 10px;}
 
 /* WHY */
 .why{
@@ -186,9 +183,29 @@ color:white;
 }
 
 .why h2{color:white;}
-.why .card{
-background:#0f6d46;
+.why .card{background:#0f6d46;color:white;}
+
+/* FORM */
+.form{
+max-width:500px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+.form input,.form select{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.form button{
+background:var(--green);
 color:white;
+padding:14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
 /* CONTACT */
@@ -208,17 +225,14 @@ gap:20px;
 .social a{
 width:45px;
 height:45px;
-background:white;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-transition:.3s;
+background:white;
 }
 
-.social a:hover{
-transform:scale(1.1);
-}
+.social img{width:22px;}
 
 /* WHATSAPP */
 .whatsapp{
@@ -240,7 +254,7 @@ footer{
 background:var(--dark);
 color:white;
 text-align:center;
-padding:25px;
+padding:20px;
 }
 
 </style>
@@ -261,10 +275,10 @@ Khulafa Islamic Secondary School
 
 <div class="menu" id="menu">
 <a href="#home">Home</a>
-<a href="#about">About</a>
 <a href="#campus">Campus</a>
 <a href="#academics">Academics</a>
 <a href="#why">Why Us</a>
+<a href="#admission">Admission</a>
 <a href="#contact">Contact</a>
 </div>
 
@@ -276,16 +290,8 @@ Khulafa Islamic Secondary School
 <div>
 <h1>Khulafa Islamic Secondary School</h1>
 <p id="text"></p>
-<a href="#contact" class="btn">Contact Us</a>
+<a href="#admission" class="btn">Apply Now</a>
 </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-<h2>About Khulafa Islamic Secondary School</h2>
-<p style="text-align:center;max-width:700px;margin:auto;">
-Khulafa Islamic Secondary School is a respected secondary school in Ndejje Lubugumu, Uganda. The school focuses on strong academics, Islamic discipline and modern education preparing students for success.
-</p>
 </section>
 
 <!-- CAMPUS -->
@@ -296,19 +302,19 @@ Khulafa Islamic Secondary School is a respected secondary school in Ndejje Lubug
 <div class="card">
 <img src="https://i.ibb.co/JjYBj53V/unnamed.webp">
 <h3>Science Laboratory</h3>
-<p>Modern practical learning environment.</p>
+<p>Hands-on experiments and practical learning.</p>
 </div>
 
 <div class="card">
 <img src="https://i.ibb.co/hJR2pmWL/images-33.jpg">
-<h3>Clubs & Sports</h3>
-<p>Building teamwork and leadership.</p>
+<h3>Sports & Clubs</h3>
+<p>Developing teamwork and leadership skills.</p>
 </div>
 
 <div class="card">
 <img src="https://i.ibb.co/MyFKpXRx/images-32.jpg">
 <h3>Graduation</h3>
-<p>Celebrating success of students.</p>
+<p>Celebrating student success.</p>
 </div>
 
 </div>
@@ -329,20 +335,39 @@ Khulafa Islamic Secondary School is a respected secondary school in Ndejje Lubug
 
 <!-- WHY -->
 <section id="why" class="why">
-<h2>Why Parents Choose Khulafa Islamic Secondary School</h2>
+<h2>Why Parents Choose Us</h2>
 <div class="grid">
 
-<div class="card"><h3>Strong Academic Results</h3></div>
-<div class="card"><h3>Islamic Values</h3></div>
+<div class="card"><h3>Strong Academics</h3></div>
+<div class="card"><h3>Islamic Discipline</h3></div>
 <div class="card"><h3>Modern Learning</h3></div>
 <div class="card"><h3>Safe Environment</h3></div>
 
 </div>
 </section>
 
+<!-- ADMISSION -->
+<section id="admission">
+<h2>Apply Now</h2>
+
+<form class="form" onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="student" placeholder="Student Name" required>
+<input type="text" id="parent" placeholder="Parent Name" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<select id="class">
+<option>S1</option><option>S2</option><option>S3</option>
+<option>S4</option><option>S5</option><option>S6</option>
+</select>
+
+<button type="submit">Apply via WhatsApp</button>
+</form>
+
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact Khulafa Islamic Secondary School</h2>
+<h2>Contact Us</h2>
 
 <div class="contact">
 <p><strong>Location:</strong> Ndejje Lubugumu, Entebbe Road</p>
@@ -384,9 +409,9 @@ link.onclick=()=>document.getElementById("menu").classList.remove("show");
 /* HERO TEXT */
 const texts=[
 "Excellence in Academics",
-"Strong Islamic Discipline",
+"Strong Islamic Values",
 "Modern Learning Environment",
-"Preparing Future Leaders"
+"Discipline and Success"
 ];
 
 let i=0;
@@ -396,6 +421,17 @@ i=(i+1)%texts.length;
 }
 setInterval(change,2500);
 change();
+
+/* WHATSAPP */
+function sendWhatsApp(){
+let s=document.getElementById("student").value;
+let p=document.getElementById("parent").value;
+let ph=document.getElementById("phone").value;
+let c=document.getElementById("class").value;
+
+let msg=`New Admission:%0AStudent:${s}%0AParent:${p}%0APhone:${ph}%0AClass:${c}`;
+window.open(`https://wa.me/256702883108?text=${msg}`);
+}
 
 </script>
 
